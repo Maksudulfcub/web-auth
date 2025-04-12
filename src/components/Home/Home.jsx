@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -13,7 +14,9 @@ const Home = () => {
                         <p className="py-6">
                             It's all about Firebase authentication project. Please Sign Up and Sign In to become a member of WebAuth.
                         </p>
-                        <button className="btn btn-primary">Get Started</button>
+                        <NavLink to="/signup">
+                            <button className="btn btn-primary">Get Started</button>
+                        </NavLink>
                     </div>
                 </div>
             </div>
